@@ -30,19 +30,57 @@
 }
 .eventos__item h3{
     grid-area: nome;
+    align-self: center;
 }
 .eventos__item h4{
     grid-area: data;
 }
 .eventos__item h5{
     grid-area: local;
+    align-self: end;
 }
 .eventos__item button{
     grid-area: botao;
 }
 
+.agenda__item{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas: 
+    "imagem imagem"
+    "mes evento"
+    "dia ."
+    "hora avisa";
+    
+}
 
+.agenda__item img {
+    grid-area: imagem;
+}
 
+.agenda__item h3{
+    grid-area: mes;
+    
+}
+
+.agenda__item h4{
+    grid-area:dia
+}
+.agenda__item h5{
+    grid-area: hora;
+}
+
+.agenda__item h6 {
+    grid-area: evento;
+}
+
+.agenda__item button{
+    grid-area: avisa;
+}
+  
+
+                   
 
 @media screen and (min-width:720px){
 
